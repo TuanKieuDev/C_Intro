@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main()
+{
+  printf("=========Emacs Commands Tutor=========");
+  printf("=========Author:Kieu Anh Tuan=========");
+  printf("=========Created as exercise of C Programming Introduction Course=========");
+  return 0;
+}

@@ -1,0 +1,38 @@
+-Emacs users Control and Escape(Alt) characters to distingguish editor commands from text to be in the buffer.
+   -Control-x: hold down the control key, and type the letter x.
+   (You don't need to capitalize the x, or any other control character)
+   -[ESCAPE] x: press the escape key down,release it, and then type x.
+   -Abreviation: C-x for Ctrl-X and M-x means Meta-x
+
+-Find and open a file:
+   -C-x C-f file_name
+
+-Save a file as you are working on it, type:
+   -C-x C-s
+
+-Exit emacs: C-x C-c
+
+				MOVING AROUND
+ M-<: Move to the Top of the file
+ M->: Move to the End of the file
+ C-v: Next screen (page down)
+ M-v: Previous screen (page up)
+ C-a: Start of the current line
+ C-e: End of the current line
+ M-f: Forward one word
+ M-b: Backward one word
+
+				Cut, Copy, and Paste
+ C-spacebar: set a mark
+ C-w: delete the block
+ M-w: copy the block
+ C-y: Paste a copied block
+
+				Another useful command
+ C-g: keyboard-quit
+ C-x 1: One window (i.e, show only one window)
+ C-x 2: Splits the screen into two windows
+ C-x 3:
+ C-x o: Move the cursor to the bottom window
+ C-x b: Switch to buffer
+ C-s: Search a string
