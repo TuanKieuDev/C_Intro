@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+  printf("%c\n", 'B');
+  printf("%c\n", 'I');
+  printf("%c\n", 'D');
+  printf("%c\n", 'V');
+  printf("%d\n", 'B');
+  printf("%d\n", 'I');
+  printf("%d\n", 'D');
+  printf("%d\n", 'V');
+
+  return 0;
+}
