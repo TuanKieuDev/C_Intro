@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main()
+{
+  printf("Player: Wayne Rooney\n");
+  printf("Season 2009-2010\n");
+  printf("%-100s%-100s%-100s%-100s","Attacking Statistics","Defensive Statistics","How goals scored","Discipline");
+  return 0;
+}
