@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+  char name[],program[],status[];
+  int p,date,month,year;
+  printf("Enter name: ");
+  gets(name);
+  printf("\nEnter program: ");
+  scanf("%s",&program);
+  printf("\nEnter promotion:");
+  scanf("%d",&p);
+  printf("Enter time (date,month,year): ",&date,&month,&year);
+  printf("%-30d: %s","Student name",name);
+  return 0;
+}
