@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+  float a,b,c;
+  printf("Enter sold ticket class A:");
+  scanf("%d",&a);
+  printf("Enter sold ticket class B:");
+  scanf("%d",&b);
+  printf("Enter sold ticket class C:");
+  scanf("%d",&c);
+  printf("The amount of income: %f",15*a+12*b+9*c);
+  return 0;
+}
+  

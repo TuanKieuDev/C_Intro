@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+  int d;
+  printf("Enter the distance (km): ");
+  scanf("%d",&d);
+  printf("\nThe fuel amount: %f",1000*d*0.08);
+  printf("\nThe cost: %d",1000*d*0.08*20000);
+  return 0;
+}

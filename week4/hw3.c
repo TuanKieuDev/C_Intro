@@ -16,7 +16,7 @@ int main ()
 	printf("%-30s%20s%d","Number of overnight DVD: ","",a);
 	printf("\n%-30s%20s%d","Number of 3-days DVD:","",b);
 	printf("\n%-30s%20s%d\n","Number of weekly DVD:","",c);
-	printf("Your total cost: %d*7.00+%d*5.00+%d*3.00=%.2f$",a,b,c,cost=a*7.00+b*5.00+c*3.00);
-	printf("\nThank you and have a nice day !\n");
+	printf("Your total cost: %d*7.00+%d*5.00*3+%d*3.00*7=%.2f$",a,b,c,cost=a*7.00+b*5.00*3+c*3.00*7);
+       printf("\nThank you and have a nice day !\n\n");
 	return 0;	
 }
