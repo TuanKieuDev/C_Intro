@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+  double heading;
+  printf("Enter heading in degrees: ");
+  scanf("%lf",&heading);
+  if(heading<0) printf("Error");
+  else if(heading<90) printf("North (%lf) east",heading);
+  else if(heading<180) printf("North (%lf) west",180.0-heading);
+  else if(heading<270) printf("South (%lf) west",heading-180.0);
+  else if(heading<=360) printf("South (%lf) east",360.0-heading);
+  else printf("Error");
+  return 0;
+}

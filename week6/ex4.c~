@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+  int age;
+  printf("Enter an age: ");
+  scanf("%d",&age);
+  if(age>0)
+    {
+      printf("\nIt is classed as: ");
+      if(age<18) printf("\nA child\n");
+      else if(age>=65) printf("\nA Senior Citizen\n");
+      else printf("\nAn Adult\n");
+    }
+  else printf("That's not a valid age");
+  return 0;
+}
