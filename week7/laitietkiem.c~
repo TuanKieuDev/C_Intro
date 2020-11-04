@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+  char name[30];
+  long tien;
+  float lainam;
+  int thang;
+  printf("moi nhap ten: ");
+  fgets(name,30,stdin);
+  printf("nhap so tien: ");
+  scanf("%ld",&tien);
+  printf("nhap lai suat hang nam: ");
+  scanf("%f",&lainam);
+  float laithang=lainam/12;
+  printf("nhap so thang gui:");
+  scanf("%d",&thang);
+  printf("So tien thu duoc sau %d thang la: %f",thang,tien*pow(1+laithang,thang));
+  return 0;
+}
+  
