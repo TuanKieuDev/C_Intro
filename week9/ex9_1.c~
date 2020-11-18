@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int kineticEnergy(float m, float v){
+  float ke = m*v*v/2;
+  return ke;
+
+int main()
+{
+  float m,v;
+  printf("ke = %.2f where m = %.2f and v = %.2f",kineticEnergy(m,v),m,v);
+  return 0;
+}
