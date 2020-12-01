@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <ctime.h>
+#include <cstdlib.h>
+
+int main(){
+  int A[10][4];
+  int row,column,i,j;
+  srand(time(NULL));
+  for(i=0;i<row;i++){
+    for(j=0;j<column;j++){
+      A[i][j]= rand()%2;
+    }
+  }
+  return 0;
+}

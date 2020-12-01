@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main()
+{
+  int A[5][3]={{1,1,0},
+	       {0,0,0},
+	       {1,1,1},
+	       {1,1,1},
+	       {1,0,1};
+  int choice;
+  do{
+    printf("Menu\n");
+    printf("1. Turn on/off by row\n");
+    printf("2. Turn on/off by column\n");
+    printf("3. Turn on/off by position\n");
+    printf("4. Current capacity\n");
+    printf("Enter your choice: ");
+    scanf("%d",&choice);
+    switch(choice){
+    case 1:;
+      int choice2,turn1,i,j;
+      do{
+	printf("Enter the row: ");
+	scanf("%d",&choice2);
+      }while(choice2<1||choice2>5);
+      printf("Press 1 if you want to turn on or 0 if you want to turn off: ");
+      scanf("%d",&turn1);
+      if(turn1==0){
+	A[choice2][3]={0,0,0};
+      }
+      if(turn1==1){
+	A[choice2][3]={1,1,1};
+      }
+      for(i=0;i<5;i++){
+	printf("\n");
+	for(j=0;j<3;j++){
+	  printf("%d", A[i][j]);
+	}
+      }
+  }while(choice!=5);
+  return 0;
+}

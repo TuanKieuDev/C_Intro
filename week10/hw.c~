@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+  int choice;
+  do{
+    printf("Menu homework\n");
+    printf("1.Ex1\n");
+    printf("2.Ex2\n");
+    printf("3.Ex3\n");
+    printf("4.Exit\n");
+    printf("Enter your choice: ");
+    scanf("%d",&choice);
+  }while
+  return 0;
+}
