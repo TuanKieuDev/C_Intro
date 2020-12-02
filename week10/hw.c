@@ -28,26 +28,26 @@ void xuat(int n, int a[], int g1[],int g2[], float total[]){
 
 int main()
 {
-  int choice;
-  do{
-  printf("Menu homework\n");
-  printf("1.Ex1\n");
-  printf("2.Ex2\n");
-  printf("3.Ex3\n");
-  printf("4.Exit\n");
-  printf("Enter your choice: ");
-  scanf("%d",&choice);
-  switch(choice){
-  case 1:;
+  //int choice;
+  //do{
+  //printf("Menu homework\n");
+  //printf("1.Ex1\n");
+  //printf("2.Ex2\n");
+  //printf("3.Ex3\n");
+  //printf("4.Exit\n");
+  //printf("Enter your choice: ");
+  //scanf("%d",&choice);
+  //switch(choice){
+  //case 1:;
     int n;
     int a[100],g1[100],g2[100];
     float total[100];
     nhap(5,a,g1,g2,total);
     xuat(5,a,g1,g2,total);
-    break;
-  case 2:;
+    //break;
+    //case 2:;
     
-    }
-   }while(choice!=4);
+    //}
+    //}while(choice!=4);
   return 0;
 }

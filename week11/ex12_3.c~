@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main{
+  float a,b,c;
+  float *p;
+  printf("Enter the value of a, b, c: ");
+  scanf("%f %f %f",&a,&b,&c);
+  p=&a;
+  p+=100;
+  printf("Value of a plus 100: %.2f\n",p);
+  p=&b;
+  p+=100;
+  printf("Value of b plus 100: %.2f\n",p);
+  p=&c;
+  p+=100;
+  printf("Value of c plus 100: %.2f\n",p);
+  return 0;
+}
