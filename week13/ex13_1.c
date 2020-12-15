@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <string.h>
+
+int numberBlank(char input[]){
+  int i=0;
+  int k=0;
+  while(input[i]!='\0'){
+    if(input[i]==' ') k++;
+    i++;
+  }
+  return k;
+}
+
+void replace(char input[], char c, char m){
+  int i=0;
+  while(input[i]!='\0'){
+    if(input[i]== c) input[i]=m;
+    i++;
+  }
+  printf("\n%s",input);
+}
+
+
+int main()
+{
+  char str[] = "Hello world, I am Walle";
+  char c,m;
+  printf("\nEnter the character you need to replace: ");
+  scanf("%c",&c);
+  printf("Enter the character you want to display: ");
+  while((getchar())!='\n');
+  scanf("%c",&m);
+  /*int cout=0;
+  int i=0;
+  printf("Number: %d",numberBlank(str);*/
+  replace(str,c,m);
+  printf("\n");
+  return 0;
+}

@@ -1,0 +1,46 @@
+#include <stdio.h>
+#define SIZE_MAX 1000
+
+void reverseByArray(int a[],int n){
+  int i=0;
+  int j=n-1;
+  while(i<j){
+    int temp=a[i];
+    a[i]=a[j];
+    a[j]=temp;
+    i++;
+    j--;
+  }
+}
+
+void nhap(int *a,int n){
+  int i;
+  for(i=0;i<n;i++){
+    printf("a[%d] = ",i);
+    scanf("%d",&a[i]);
+  }
+}
+
+void reverseByPointer(int *a,int n){
+  int i=0;
+  int j=n-1;
+  while(i<j){
+    int temp = a[i];
+    a[i]=a[j];
+    a[j]=temp;
+    i++;
+    j--;
+  }
+  for(i=0;i<n;i++){
+    printf("%5d",a[i]);
+  }
+  printf("\n");
+}
+
+int main()
+{
+  int a[SIZE_MAX];
+  nhap(a,5);
+  reverseByPointer(a,5);
+  return 0;
+}

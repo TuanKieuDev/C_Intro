@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+void encode(char s[]){
+}
+
+int main()
+{
+  char s[30];
+  gets(s);
+  puts(s);
+  return 0;
+}

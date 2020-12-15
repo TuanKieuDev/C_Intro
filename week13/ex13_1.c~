@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+void numberBlank(char input[]){
+  int i=0;
+  int k=0;
+  while(str[i]!='\0'){
+    if(str[i]==" ") k++;
+    i++;
+  }
+  return k;
+}
+
+int main()
+{
+  char str[] = "Hello world, I am Walle";
+  int cout=0;
+  int i=0;
+  numberBlank(str);
+  return 0;
+}

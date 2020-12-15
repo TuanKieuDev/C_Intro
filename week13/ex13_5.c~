@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+
+int strend(char *s, char *t)
+{
+  int result = 0;
+  int length_s = strlen(s), length_t = strlen(t);
+  if(length_t <= length_s){
+    s+=length_s - length_t;
+    if(0==strcmp(s,t)) result = 1;
+  }
+  return result;
+}
+
+int main()
+{
+  char *s1 = "Hanoi University of Science and Technology";
+  char *s2 = "logy";
+  if(strend(s1,s2)) printf("True\n");
+  else printf("False\n");
+  return 0;
+}

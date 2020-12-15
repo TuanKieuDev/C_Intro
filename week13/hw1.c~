@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <string.h>
+
+void xoa(char s[], int k){
+  int n =strlen(s);
+  int i;
+  for(i = k+1;i<n;i++){
+    s[i-1]=s[i];
+  }
+  s[n-1]='\0';
+}
+
+void trimRight(char a[]){
+  int i;
+  while(1){
+    if(a[0]==' ') xoa(a,0);
+    else break;
+  }
+}
+
+void trimLeft(char a[]){
+  int i;
+  while(1){
+    if(a[strlen(a)-2]==' ') xoa(a,strlen(a)-2);
+    else break;
+  }
+}
+
+void trimMiddle(char a[]){
+  
+ 
+}
+
+
+int main()
+{
+  char a[60] = "    Cong  hoa xa          hoi CNVN       .";
+  printf("%s\n",a);
+  /* trimRight(a);
+  printf("%s\n",a);
+  trimLeft(a);
+  printf("%s\n",a);*/
+  trimMiddle(a);
+  printf("%s\n",a);
+  return 0;
+}
