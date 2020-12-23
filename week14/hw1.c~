@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <ctype.h>
+int checkValidNumberPlate(char s[]){
+  if(isalpha(s[0])==0) return 0;
+     else return 1;
+}
+
+int main(){
+  char s[20];
+   int  choice;
+  do{
+        printf("Enter the number plate: \n");
+	while((getchar()!='\n'))
+
+    gets(s);
+    if(checkValidNumberPlate(s)) printf("True\n");
+    else printf("False\n");
+    printf("Press 1 to continue or 0 to exit\n");
+    scanf("%d",&choice);
+  }while(choice!=0);
+  return 0;
+}
